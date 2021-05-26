@@ -1,0 +1,35 @@
+CREATE TABLE if not exists Staff
+(
+  id int auto_increment NOT NULL,
+  userName varchar(30) NOT NULL,
+  password varchar(10) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE if not exists Menu
+(
+  id int auto_increment NOT NULL,
+  itemName varchar(30) NOT NULL,
+  itemPrice varchar(20) NOT NULL,
+  PRIMARY KEY (id)
+);
+
+INSERT INTO Staff
+(userName, password)
+VALUES ('Mahfuz Srijon', '1997');
+
+INSERT INTO Staff
+(userName, passwordpe)
+VALUES ('Sayma Sultana', '1122');
+
+INSERT INTO Staff
+(userName, password)
+VALUES ('Nowshin Sabrin','1122');
+
+INSERT INTO Staff
+(userName, password)
+VALUES ('Sudipto Saha', '1122');
+
+INSERT INTO Staff
+(userName, password)
+VALUES ('Nasim Wahid', '1122');

@@ -1,0 +1,20 @@
+﻿<Window x:Class="Food_Ordering_System_WPF.Menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Food_Ordering_System_WPF"
+        mc:Ignorable="d"
+        Title="Menu" Height="646.782" Width="504.935" WindowStartupLocation="CenterScreen" Background="RosyBrown">
+    <Grid Margin="0,-28,2,4">
+        <Button Content="Go Back to main window" FontSize="25" Foreground="YellowGreen" FontWeight="Bold" FontStyle="Normal" FontFamily="MV Boli" Margin="83,553,78,43" Background="WhiteSmoke" HorizontalAlignment="Stretch" Width="Auto" BorderBrush="#FFFFFBFB" Click="Back" RenderTransformOrigin="0.588,1.159" />
+        <DataGrid x:Name="DgItem" SelectionMode="Extended" AutoGenerateColumns="True" HorizontalAlignment="Left" Height="342" Margin="83,112,0,0" VerticalAlignment="Top" Width="334" SelectionChanged="DgItem_SelectionChanged_1"  >
+            <DataGrid.Columns>
+                <DataGridComboBoxColumn ClipboardContentBinding="{x:Null}" SelectedValueBinding="{x:Null}" SelectedItemBinding="{x:Null}" TextBinding="{x:Null}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="Order_button" Content="Order" FontSize="30" Foreground="YellowGreen" FontWeight="Bold" FontFamily="MV Boli" HorizontalAlignment="Left" Margin="129,479,0,0" VerticalAlignment="Top" Width="246" Height="54" Click="Order_button_Click"/>
+        <Label Content="Food Menu" FontSize="35" FontStyle="Normal" HorizontalAlignment="Left" Margin="83,54,0,0" VerticalAlignment="Top" Foreground="#FFF5F2EB" Width="376" FontFamily="Wide Latin"/>
+        
+    </Grid>
+</Window>

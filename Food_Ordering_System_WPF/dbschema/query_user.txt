@@ -1,0 +1,75 @@
+CREATE TABLE if not exists user
+(
+  id int NOT NULL,
+  userName varchar(30) NOT NULL,
+  password varchar(10) NOT NULL,
+  userType varchar(20) NOT null,  
+  PRIMARY KEY (id)
+);
+
+INSERT INTO user
+(id,userName,password,userType )
+VALUES ('101','Mahfuz Srijon', '1997','staff');
+INSERT INTO user
+(id,userName, password,userType)
+VALUES ('102','Sayma Sultana', '1122','manager');
+INSERT INTO user
+(id,userName, password,userType)
+VALUES ('103','Nowshin Sabrin','1122','staff');
+INSERT INTO user
+(id,userName, password,userType)
+VALUES ('104','Sudipto Saha', '1122','staff');
+INSERT INTO user
+(id,userName, password,userType)
+VALUES ('105','Nasim Wahid', '1122','manager');
+
+
+
+CREATE TABLE if not exists Staff
+(
+  id int NOT NULL,
+  name varchar(30) NOT NULL,
+  address varchar(50) NOT NULL,
+  email varchar(20) NOT NULL,  
+  PRIMARY KEY (id)
+);
+
+INSERT INTO staff
+(id,name,address,email)
+VALUES ('101','Mahfuz Srijon', 'Rajshahi','mahfuz@gmail.com');
+INSERT INTO staff
+(id,name,address,email)
+VALUES ('103','Nowshin Sabrin', 'khulna','nowhin@gmail.com');
+INSERT INTO staff
+(id,name,address,email)
+VALUES ('104','Sudipto Saha', 'Dhaka','sudipto@gmail.com');
+
+
+CREATE TABLE if not exists customer
+(
+  id int NOT NULL,
+  name varchar(30) NOT NULL,
+  number varchar(20) NOT NULL,  
+  PRIMARY KEY (id)
+);
+
+CREATE TABLE if not exists orders
+(
+  id int NOT NULL,  
+  item_id int NOT NULL,
+  customer_id int NOT NULL,  
+  PRIMARY KEY (id),
+  FOREIGN KEY (item_id) REFERENCES menu(id),
+  FOREIGN KEY (customer_id) REFERENCES customer(id)  
+);
+
+INSERT INTO orders(id, item_id,customer_id)
+VALUES(201,(SELECT id FROM menu WHERE itemName = 'Fried Chicken'),(SELECT id FROM customer WHERE number=01717204481))
+
+CREATE TABLE if not exists cart
+(
+  item_id int(11) NOT NULL,
+  PRIMARY KEY (item_id),
+  FOREIGN KEY (item_id) REFERENCES menu(id)
+);
+

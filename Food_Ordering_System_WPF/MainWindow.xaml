@@ -1,0 +1,19 @@
+﻿<Window x:Class="Food_Ordering_System_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Food_Ordering_System_WPF"
+        mc:Ignorable="d"
+        Title="Welcome To Food Ordering System" Height="622.34" Width="876.595" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image Source="G:\Visual Studio Community\Sudipto\Food_Ordering_System_WPF\Food_Ordering_System_WPF\Assets\chicken fries.jpg" Height="594" Stretch="Fill" Margin="0,0,0,-3"></Image>
+        <StackPanel Margin="0,0,0,373">
+            <Button x:Name="login_button" Content="Log In" HorizontalAlignment="Right" Height="55" Width="155" FontSize="24" Background="#FF574E4E" Foreground="BurlyWood" FontWeight="Bold" FontFamily="Segoe UI Black" Click="Login_button_Click_1" RenderTransformOrigin="0.449,1.302"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="117" VerticalAlignment="Center" Width="363" Margin="275,223,231,251">
+            <Button Name="order_button" Content="Order Now!" FontSize="48" Height="115" Foreground="Yellow" FontWeight="Bold" FontStyle="Normal" FontFamily="MV Boli" Margin="0,0,10,0" Background="Brown" HorizontalAlignment="Stretch" Width="Auto" BorderBrush="#FFFFFBFB" Click="order_button_Click" />
+        </StackPanel>
+
+    </Grid>
+</Window>

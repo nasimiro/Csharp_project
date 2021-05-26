@@ -1,0 +1,27 @@
+﻿<Window x:Class="Food_Ordering_System_WPF.manager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Food_Ordering_System_WPF"
+        mc:Ignorable="d"
+       Title="manager_page" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="foodNameList" HorizontalAlignment="Left" Height="310" Margin="450,99,0,0" VerticalAlignment="Top" Width="342"/>
+        <Label Content="ID:" FontSize="22" HorizontalAlignment="Left" Margin="16,99,0,0" VerticalAlignment="Top" Width="123"/>
+        <Label Content="Item Name:" FontSize="22" HorizontalAlignment="Left" Margin="16,170,0,0" VerticalAlignment="Top"/>
+        <Label Content="Item Price:" FontSize="22" HorizontalAlignment="Left" Margin="16,242,0,0" VerticalAlignment="Top" Width="123"/>
+        <TextBox FontSize="22" HorizontalAlignment="Left" Height="39" Margin="169,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"/>
+        <TextBox x:Name="txtName" FontSize="22" HorizontalAlignment="Left" Height="39" Margin="169,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"/>
+        <TextBox x:Name="txtPrice" FontSize="22" HorizontalAlignment="Left" Height="39" Margin="169,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246"/>
+        <Button x:Name="btnsave" Content="Save" FontSize="20" HorizontalAlignment="Left" Margin="10,320,0,0" VerticalAlignment="Top" Width="76" Height="42" Click="Save_Button_Click"/>
+        <Button Content="Remove" FontSize="20" HorizontalAlignment="Left" Margin="129,320,0,0" VerticalAlignment="Top" Width="76" Height="42"/>
+        <Button Content="Update" FontSize="20" HorizontalAlignment="Left" Margin="244,320,0,0" VerticalAlignment="Top" Width="76" Height="42"/>
+        <Label Content="Manage Items" FontSize="28" Margin="129,10,472,0" VerticalAlignment="Top"/>
+        <Button Content="Cancel" FontSize="20" HorizontalAlignment="Left" Margin="355,320,0,0" VerticalAlignment="Top" Width="76" Height="42" Click="Button_Click_1"/>
+        <Button Content="Load" FontSize="20" HorizontalAlignment="Left" Margin="556,53,0,0" VerticalAlignment="Top" Width="132" Height="41" Click="Button_Click"/>
+
+
+
+    </Grid>
+</Window>

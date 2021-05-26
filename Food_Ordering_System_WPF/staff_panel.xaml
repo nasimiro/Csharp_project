@@ -1,0 +1,14 @@
+﻿<Window x:Class="Food_Ordering_System_WPF.staff_panel"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Food_Ordering_System_WPF"
+        mc:Ignorable="d"
+        Title="staff_panel" Height="491.489" Width="503.191">
+    <Grid>
+        <Button x:Name="Show_orders" Content="Check Order List" FontSize="40" HorizontalAlignment="Left" Margin="70,134,0,0" VerticalAlignment="Top" Width="361" Height="134" FontWeight="Bold" Click="Show_orders_Click"/>
+        <Label Content="Staff Panel" FontSize="40" HorizontalAlignment="Left" Margin="116,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Rockwell Extra Bold"/>
+
+    </Grid>
+</Window>
